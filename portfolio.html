@@ -184,46 +184,75 @@
 
 <!-- ФУТЕР -->
 <footer class="footer">
-    <div class="footer_div">
-        <p class="logo" style="color: white;"><span style="color: #2196F3;">Web</span>Studio</p>
-        <p class="adres">ул. Безулицы</p>
-        <p class="footerbox_txt">info@example.com</p>
-        <p class="footerbox_txt">+38 111 111 11 11</p>
-    </div>
-    <div class="footer_social">
-        <p class="footer_link_text">ПРИСОЕДИНЯЙТЕСЬ</p>
-        <ul class="social_icons_list_footer">
-            <li class="social_icons_footer">
-                <a class="social_icons_link_footer" href="#">
-                    <svg class="footer-icons">
-                        <use width="20px" height="20px" class="" href="./images/icons.svg#icon-instagram"></use>
-                    </svg></a>
-            </li>
-            <li class="social_icons_footer">
-                <a class="social_icons_link_footer" href="#">
-                    <svg class="footer-icons">
-                        <use width="20px" height="20px" class="" href="./images/icons.svg#icon-twitter">
-                        </use>
-                    </svg></a>
-            </li>
-            <li class="social_icons_footer">
-                <a class="social_icons_link_footer" href="#">
-                    <svg class="footer-icons">
-                        <use width="20px" height="20px" class="" href="./images/icons.svg#icon-facebook">
-                        </use>
-                    </svg></a>
-            </li>
-            </a></li>
-            <li class="social_icons_footer">
-                <a class="social_icons_link_footer" href="#">
-                    <svg class="footer-icons">
-                        <use width="20px" height="20px" class="" href="./images/icons.svg#icon-linkedin">
-                        </use>
-                    </svg></a>
-            </li>
-            </a></li>
-        </ul>
+    <ul class="spisok-footer">
+        <li>
+            <ul class="footer_div">
+                <li class="logo" style="color: white;"><span style="color: #2196F3;">Web</span>Studio</li>
+                <li class="footerbox_txt" id="adres">ул. Безулицы</li>
+                <li class="footerbox_txt">info@example.com</li>
+                <li class="footerbox_txt">+38 111 111 11 11</li>
+            </ul>
+        </li>
+
+        <li>
+            <div class="footer_social">
+                <p class="footer_link_text">ПРИСОЕДИНЯЙТЕСЬ</p>
+                <ul class="social_icons_list_footer">
+                    <li class="social_icons_footer">
+                        <a class="social_icons_link_footer" href="#">
+                            <svg class="footer-icons">
+                                <use width="20px" height="20px" class="" href="./images/icons.svg#icon-instagram"></use>
+                            </svg></a>
+                    </li>
+                    <li class="social_icons_footer">
+                        <a class="social_icons_link_footer" href="#">
+                            <svg class="footer-icons">
+                                <use width="20px" height="20px" class="" href="./images/icons.svg#icon-twitter">
+                                </use>
+                            </svg></a>
+                    </li>
+                    <li class="social_icons_footer">
+                        <a class="social_icons_link_footer" href="#">
+                            <svg class="footer-icons">
+                                <use width="20px" height="20px" class="" href="./images/icons.svg#icon-facebook">
+                                </use>
+                            </svg></a>
+                    </li>
+                    </a>
+        </li>
+        <li class="social_icons_footer">
+            <a class="social_icons_link_footer" href="#">
+                <svg class="footer-icons">
+                    <use width="20px" height="20px" class="" href="./images/icons.svg#icon-linkedin">
+                    </use>
+                </svg></a>
+        </li>
+        </a></li>
+    </ul>
+    </li>
+
+    <li>
+        <div class="footer-rassylka">
+            <p id="text-rassylka">Подпишитесь на рассылку</p>
+            <label class="footer-input-btn">
+                <input class="input-footer" type="email" name="E-mail" placeholder="E-mail">
+
+                <button type="submit" class="button-subscribe">
+                    <p id="text-subscribe">Подписаться</p>
+                    <svg width="24px" height="24px">
+                        <use href="./images/icons.svg#icon-icon-send"></use>
+                    </svg>
+                </button>
+
+            </label>
+        </div>
+    </li>
+    </ul>
 </footer>
+
+
+<script src="./js/modal.js"></script>
+</body>
 </div>
 </body>
 

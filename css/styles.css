@@ -93,6 +93,7 @@ ul {
 }
 #email::hover::after {
     fill: #2196F3;
+    transition-duration: 250ms;
 }
 
 #tel {
@@ -103,10 +104,14 @@ ul {
     padding-left: 50px;
     }
 #tel:hover {
-    color: #2196F3
+    color: #2196F3;
+    transition-duration: 250ms;
 }
 a:hover {
-     color: #2196F3
+     color: #2196F3;
+     text-decoration: underline;
+    transition-duration: 250ms;
+     
     }
 /* ============ЛОГО=========== */
 .logo {
@@ -432,9 +437,11 @@ fill: #AFB1B8;
   
 .social_icons_link_test:hover {
     background-color: #2196F3;
+    transition-duration: 250ms;
 }
 .social_icons_link_test:hover .bi-instagram {
     fill: #ececec;
+    transition-duration: 250ms;
 }
 /* ====================КЛІЄНТИ===================== */
 .title_clients {
@@ -473,9 +480,11 @@ display: flex;
 
 .clients_logo:hover{
     border-color: #2196F3;
+    transition-duration: 250ms;
 }
 .clients_logo:hover .logo_svg {
     fill: #2196F3;
+    transition-duration: 250ms;
 }
 /* ====================ФУТЕР===================== */
 .footer {
@@ -485,13 +494,16 @@ display: flex;
     background-color: #2F303A;
     display: flex;
 }
-
-.adres {
+.spisok-footer {
+    display: flex;
+}
+#adres {
     margin-left: 215px;
     font-weight : 400;
     line-height: 24px;
     letter-spacing: 0.03em;
     color: #FFFFFF;
+    padding-top: 20px;
 }
 
 .footerbox_txt {
@@ -500,11 +512,12 @@ display: flex;
     line-height: 9px;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    margin-bottom: 30px;
+    margin-bottom: 9px;
+    padding-top: 9px;
 }
 
 .footer_div {
-    padding-top: 30px;
+    padding-top: 70px;
 }
 .footer_social {
     margin-left: 70px;
@@ -565,10 +578,66 @@ display: flex;
     }
     .social_icons_link_footer:hover {
         background-color: #2196F3;
+        transition-duration: 250ms;
     }
     .social_icons_link_test:hover .bi-instagram {
             fill: #ececec;
+            transition-duration: 250ms;
      }
+/* ===================ФУТЕР РАССЫЛКА=========== */
+
+.footer-rassylka {
+display: block;
+padding-left: 90px;
+justify-content: center;
+padding-top: 70px;
+}
+
+
+.footer-input-btn {
+    display: flex;
+    padding-top: 20px;
+    gap: 12px;
+    
+}
+.input-footer {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    width: 358px;
+    height: 50px;
+    background-color: transparent;
+    padding-left: 16px;
+}
+#text-rassylka {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.button-subscribe {
+    width: 200px;
+    height: 50px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding-left: 20px;
+    gap: 10px;
+}
+#text-subscribe {
+    color: #ECECEC;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+
 
 /* ===============МОДАЛКА================= */
 
@@ -577,19 +646,18 @@ display: flex;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
-    
-
 }
+
 .modal {
     position: absolute;
     width: 528px;
-    height: 581px;
+    height: 600px;
     background-color: #FFFFFF;
     margin-top: 230px;
     margin-left: 690px;
-    transition: transform 250ms;
-    
+    transition: 250ms linear;
 }
+
 .but_cross {
     width: 30px;
     height: 30px;
@@ -621,8 +689,7 @@ display: flex;
     transform: translate(-50%, -50%) scale(0);
 }
 .modal-content {
-    padding: 0px 40px 40px 20px;
-
+    padding: 0px 0px 00px 00px;
 }
 #modal-comment {
 height: 120px;
@@ -636,6 +703,7 @@ width: 100%;
     letter-spacing: 0.01em;
     color: #757575;
     text-align: start;
+    margin-bottom: 4px;
 
 }
 
@@ -648,8 +716,8 @@ width: 100%;
     border-radius: 4px;
     margin-bottom: 5px;
     padding-left: 30px;
-
 }
+
 
 .modal-wrapper {
     position: relative;
@@ -665,29 +733,28 @@ width: 100%;
 
 .checkbox {
     display: flex;
+    justify-content: baseline;
+    align-items: baseline;
 }
 
 #checkbox-btn {
     width: 16px;
     height: 15px;
-
     background: #2196F3;
     border-radius: 2px;
+    
 }
 
 #send-txt {
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
-    /* identical to box height, or 171% */
-
+    line-height: 22px;
     letter-spacing: 0.03em;
-
     color: #757575;
 }
 #modal-comment {
     width: 100%;
-    height: 120px;
+    height: 100px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     resize: none;
@@ -698,10 +765,30 @@ width: 100%;
     background: #188CE8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    
+    
+}
+.modal-btn-send2 {
+    padding-left: 140px;
 }
 .send-btn-txt {
     letter-spacing: 0.06em;
     color: #FFFFFF;
+}
+.modal_title {
+    font-weight: 700;
+    font-size: 20px;
+    /* line-height: 10px; */
+    text-align: center;
+    letter-spacing: 0.03em;
+    top: 10px;
+    margin: 0 0;
+}
+.modal-input:focus {
+    border-color: #2196F3;
+}
+.modal-input:focus + .modal-icon {
+    fill: #2196F3;
 }
 /* ===============ПОРТФОЛІО=============== */
 
@@ -735,6 +822,7 @@ width: 100%;
 .menu-filtr .link:hover {
     background-color: #2196F3;
     color: #F5F4FA;
+    transition-duration: 250ms;
   }
 
 
@@ -755,6 +843,7 @@ width: 100%;
 }
 .cards:hover .hover_text {
 transform: translateY(0);
+transition-duration: 250ms;
 }
 
 .hover_text {
@@ -771,7 +860,7 @@ transform: translateY(0);
     line-height: 28px;
     letter-spacing: 0.03em;
     transform: translateY(100%);
-    transition: transform 250ms;
+    transition: 250ms, trasform;
 
 }
 .cars_top_wrap {
@@ -824,8 +913,11 @@ transform: translateY(0);
 }
 .iconinsta:hover {
     fill: #2196F3;
+    transition-duration: 250ms;
 }
+.modal-wrapper .but_cross {
 
+}
 /* ============================================ */
 
 
@@ -908,3 +1000,8 @@ transform: translateY(0);
     margin-bottom: 5px;
 
 }
+
+
+
+
+
