@@ -23,8 +23,8 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="backdrop is-hidden"></div>
         <div class="modal" id="modal">
-            <button class="but_cross" data-modal-close>
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" viewBox="0 0 512 512">
+            <button class="but_cross cross-svg-icon" data-modal-close>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" viewBox="0 0 512 512" class="cross-svg-icon">
                     <use href="./images/icons.svg#icon-cross"">
                     </use>
                 </svg>
@@ -49,16 +49,19 @@
                         placeholder="Почта"><svg class="modal-icon" width="18px" height="18px">
                         <use href="./images/icons-modal.svg#icon-email-black-18dp-1"></use>
                     </svg>
-                </label><label for="">
-                    <p class="text-input">Коментарий</p><textarea name="commet" id="modal-comment" cols="30" rows="10"></textarea>
                 </label>
-                <label for="" class="modal-wrapper">
-                    <div class="checkbox"><input type="checkbox" name="условия"
-                            value="Соглашаюсь с рассылкой и принимаю Условия договора" id="checkbox-btn">
-                        <p id="send-txt">Соглашаюсь с рассылкой и принимаю <a href="#" class="modal-contract">Условия договора
-                        </a></span>
-                    </div>
+                <label for="">
+                    <p class="text-input">Коментарий</p>
+                    <textarea name="commet" id="modal-comment" cols="30" rows="10" class="comment"></textarea>
                 </label>
+
+                <div for="" class="modal-wrapper">
+                    <input type="checkbox" name="policy" value="Соглашаюсь с рассылкой и принимаю Условия договора" id="checkbox-btn" class="modal-check">
+                <label for="checkbox-btn" class="check-txt">
+                    Соглашаюсь с рассылкой и принимаю Условия договора</label>
+                </div>
+                </div>
+
             </form>
             <div class="modal-btn-send2">
             <button type="submit" class="modal-btn-send">
